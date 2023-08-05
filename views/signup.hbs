@@ -5,6 +5,12 @@
 	</head>
 	<body>
 		<h1>Sign Up Form</h1>
+		{{#if message}}
+            <div class="alert-danger" role="alert">
+                {{message}}
+            </div>
+        {{/if}}
+		<br/>
 		<form id="reg-form" action="/api/register" method="post">
 
 			<div class="form-group">

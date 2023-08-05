@@ -16,7 +16,9 @@ form{
     border-radius: 5px;
     
 }
-
+.alert-danger {
+    color: red;
+}
 h1{
     text-align: center;
 }

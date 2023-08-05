@@ -5,6 +5,12 @@
 	</head>
 	<body>
 		<h1>Login Form</h1>
+		{{#if message}}
+            <div class="alert-danger" role="alert">
+                {{message}}
+            </div>
+        {{/if}}
+		<br/>
 		<form id="reg-form" method="post" action="/api/login">
 
 			<div class="form-group">
@@ -15,7 +21,6 @@
 				<label>Password</label>
 				<input type="password" name="password" placeholder="Enter your password" />
 			</div>
-
 			<br />
 			<button type="submit">Login</button>
 		</form>
